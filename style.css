@@ -1,0 +1,48 @@
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 30px;
+    border: none;
+    cursor: pointer;
+    transition:  background-color 0.3s ease;
+    text-decoration: none;
+}
+button:hover{
+    background-color: green;
+}
+
+header h1{
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    text-align: center;
+}
+body{
+
+    background-color:#f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#social-media-links a img{
+    width: 20px;
+    border:  none;
+    height: 20px;
+    margin: 5px;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.radio-container input{
+    position: static;
+    cursor: pointer;
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #f8f8f8;
+
+}

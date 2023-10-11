@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERENITY</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <address></address>
+    <header>
+        <h1 title=" serenity calculator">SERENITY CALCULATOR</h1>
+        <p title="Shekinah B Mulenga, welcomes you">Welcome to serenity's continuous assesment calculator</p>
+    </header>
+
+    <main>
+        <div class="step" id="step1">
+            <section>
+                <label class="radio-container"  title ="first year">
+                    <input type="radio" name = "year" title="Select year" value="first year">First year
+                </label>
+                <br><br>
+
+                <label class="radio-container"  title="second year">
+                    <input type="radio" name = "year" title="Select year" value="second year">Second year
+                </label>
+                <br><br>
+
+                <button type="button" onclick ="validateYearOfStudy()" title="Next">Next</button>
+            </section>
+        </div>
+
+        <div class="step" id="step2" style="display: none;">
+            <h2>Select course:</h2>
+    
+                <section>
+                    <label class="radio-container"  title ="MA 210">
+                        <input type="radio" name = "course" title="Select Course" value="MA 210">ENGINEERING MATHEMATICS (MA 210)
+                    </label>
+                    <br><br>
+    
+                    <label class="radio-container"  title="PH 210">
+                        <input type="radio" name = "course" title="Select Course" value="PH 210">PHYSICS (PH 210)
+                    </label>
+                    <br><br>
+                    
+                    <Label class="radio-container"  title="CS 220">
+                        <input type="radio" name = "course" title="Select Course" value="CS 220">COMPUTER ARCHITECTURE AND ORGANIZATION(CS 220)
+                    </Label>
+                    <br><br>
+    
+                    <label class="radio-container"  title="CS 225">
+                        <input type="radio" name = "course" title="Select Course"  value=" CS225">OPERATING SYSTEMS AND RESOURCE MANAGEMENT (CS 225)
+                    </label>
+                    <br><br>
+    
+                    <label class="radio-container"  title="CS 230">
+                        <input type="radio" name = "course" title="CS 230" value="CS 230">SOFTWARE ENGINEERING(CS 230)
+                    </label>
+                    <br><br>
+    
+                    <label class="radio-container"  title="CS 235">
+                        <input type="radio" name = "course" title="CS 235" value="CS 235">DATABASE SYSTEMS(CS 235)
+                    </label>   
+                    <br><br>
+    
+                    <label class="radio-container" title="CS 250">
+                        <input type="radio" name = "course" value="CS 250">DATA STRUCTURES,ALGORITHMS AND PROGRAMMING(CS 250)
+                    </label>
+                    <br><br>
+                       
+                    <label class="radio-container" title="CS 270">
+                        <input type="radio" title="Select Course" name = "course" value="CS 270">DIGITAL DESIGN(CS 270)
+                    </label>
+                    <br><br>
+    
+                    <button type="button" title="go back" onclick="previousStep()">Previous </button>
+                    <button type="button" onclick="validateCourse()" title="Next">Next</button>   
+    
+                </section>
+        </div>
+    
+        <div class="step" id="step3" style ="display: none;">
+            <h2>Enter percentage</h2>
+            <section>
+                <label> Percentage:
+                    <input type = "number" id = "percentage" required>
+                </label>
+    
+                <br><br>
+                <button type="button" title="go back" onclick="previousStep()">Previous </button>
+                <button type="button" onclick ="validatePercentage ()" title="Next">Next</button>
+    
+            </section>
+    
+        </div>
+    
+    
+        <div class="step" id="step4" style="display: none;">
+    
+            <section>
+                <h2 title = "Evaluation Method"> Evaluation Method </h2>
+                <input  type = "hidden" name="course" id = "hiddenCourse">
+                <input  type = "hidden" name="percentage" id = "hiddenPercentage">
+                <label> Choose Evaluation Method: </label><br><br>
+                <input type="radio" name ="scale" value = "10"> out of 10
+                <input type="radio" name ="scale" value = "15"> out of 15
+                <input type="radio" name ="scale" value = "20"> out of 20 
+                <input type="radio" name ="scale" value = "25"> out of 25
+                <input type="radio" name ="scale" value = "30"> out of 30
+                <input type="radio" name ="scale" value = "40"> out of 40
+    
+                <br><br>
+                <button type ="button" title ="go back" onclick = "previousStep()">Previous</button>
+                <button type ="button" title ="calculate" onclick = "calculate_final_score()">Calculate</button>
+    
+    
+            </section>
+        
+        
+        </div>
+    </main>
+
+    <footer>
+        <p> For more info: </p>
+
+            <div id="social-media-links">
+
+                 <a id = "facebookLogo" href="www.facebook.com" target="_blank">
+                    <img src="facebook.png" alt="facebook logo" title="Contact us via facebook">
+                </a>
+                
+                <a id="InstagramLogo" href="www.instagram.com" target="_blank">
+                    <img src="Instagram_logo_2016.svg.png#" alt="Instagram logo" title=" Contact us via Instagram">
+                </a>
+
+                <a id ="WhatsAppLogo" href="www.whatsapp.com" target="_blank">
+                    <img src="WhatsApp.svg.png" alt="WhatsApp logo" title="Contact us via WhatsApp">
+                </a>
+            </div>
+
+        <p>&copy; 2023 SERENITY</p>
+
+    </footer>
+</body>
+</html>
